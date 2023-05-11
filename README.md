@@ -1,4 +1,32 @@
-ASD
+Catatan Test
+1. Composer install
+2. Buat database di mysql/mariadb dengan nama "gokampus"
+3. Buka directory artikel_test 
+4. migrasi database -> php artisan migrate
+5. membuat shorcut link storage -> php artisan storage:link
+6. untuk menjalankan program -> php artisan serve
+7. untuk login -> http://localhost:8000/auth 
+
+Akses API di post man
+1. Menampilkan semua data -> http://localhost:8000/api/articles (get)
+2. Menampilkan detail data -> http://localhost:8000/api/articles/1 (get)
+3. insert data -> http://localhost:8000/api/articles(post)
+    klik tab body pilih form-data
+    key          type          input
+    image        file          .jpeg,.jpg,.png,.gif
+    title        text          input title
+    content      text          input title
+    user_id      int           1   
+4. update data -> http://localhost:8000/api/articles/1 (put/patch)
+    klik tab body pilih form-data
+    key          type          input
+    image        file          .jpeg,.jpg,.png,.gif
+    title        text          input title
+    content      text          input title
+    user_id      int           1
+5. hapus data -> http://localhost:8000/api/articles/1 (delete)
+    
+    
 
 
 
